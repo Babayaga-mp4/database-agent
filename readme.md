@@ -60,3 +60,6 @@ Use the hospitalizedIncrease column.
 
     Finished chain.
     {'input': 'How many patients were hospitalized during July 2020', 'output': 'There were 5,535,849 patients hospitalized during July 2020.'}
+
+
+Inspired From: https://learn.deeplearning.ai/accomplishments/7b4fe22d-b4fd-400f-a43e-8a49b6b1be64?usp=sharing
