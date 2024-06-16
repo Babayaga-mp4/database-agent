@@ -3,7 +3,7 @@ from langchain_openai import ChatOpenAI
 class LLM():
     def __init__(self) -> None:
         self.llm = ChatOpenAI(
-                model="gpt-4o",
+                model="gpt-3.5-turbo-0125",
                 temperature=0,
                 max_tokens=None,
                 timeout=None,
@@ -13,3 +13,4 @@ class LLM():
         return self.llm.invoke([message]).content
 
     pass
+
