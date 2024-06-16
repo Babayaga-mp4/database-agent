@@ -7,7 +7,8 @@ Sample Input
 
 Sample Output
 
-`> Entering new SQL Agent Executor chain...
+`
+> Entering new SQL Agent Executor chain...
 I need to find the total number of patients hospitalized during July 2020 from the database.
 Action: sql_db_query_checker
 Action Input: 
@@ -46,4 +47,6 @@ WHERE date >= '2020-07-01' AND date <= '2020-07-31'[(5535849.0,)]I now know the 
 Final Answer: There were 5,535,849 patients hospitalized during July 2020.
 
 > Finished chain.
-{'input': 'How may patients were hospitalized during July 2020', 'output': 'There were 5,535,849 patients hospitalized during July 2020.'}`
+{'input': 'How may patients were hospitalized during July 2020', 'output': 'There were 5,535,849 patients hospitalized during July 2020.'}
+
+`
