@@ -1,8 +1,8 @@
 import os
 
-from agent import DataFrameAgent, SQLAgent
-from prompts import CSV_PROMPT_PREFIX, CSV_PROMPT_SUFFIX, QUESTION
-from utils import setup_db, DB_PATH
+from agents import SQLAgent
+from prompts import QUESTION
+from utils import setup_db
 
 os.environ['OPENAI_API_KEY'] = "API KEY HERE"
 

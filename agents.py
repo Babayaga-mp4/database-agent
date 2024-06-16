@@ -34,7 +34,3 @@ class DataFrameAgent(LLM):
     
     def call(self, message):
         return self.df_agent(message)
-
-    
-
-        

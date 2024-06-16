@@ -17,5 +17,5 @@ def setup_db():
     if_exists='replace',
     index=False
     )
-    print("DATABASE INITIALIZATION SUCCESSFULL")
+    print("************** DATABASE INITIALIZATION SUCCESSFULL ******************")
     return db_uri

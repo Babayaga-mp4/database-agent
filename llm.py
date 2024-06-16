@@ -11,6 +11,3 @@ class LLM():
             )
     def call(self, message):
         return self.llm.invoke([message]).content
-
-    pass
-
