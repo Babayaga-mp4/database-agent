@@ -5,7 +5,7 @@ from llm import LLM
 from agent import DataFrameAgent
 from prompts import CSV_PROMPT_PREFIX, CSV_PROMPT_SUFFIX, HELLO_WORLD, HELLO_WORLD_AGENT, QUESTION
 
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = ""
 
 if __name__ == "__main__":
     # llm_object = LLM()
