@@ -1,19 +1,12 @@
 import os
-import pandas as pd
 
-from llm import LLM
-from agent import DataFrameAgent
-from prompts import CSV_PROMPT_PREFIX, CSV_PROMPT_SUFFIX, HELLO_WORLD, HELLO_WORLD_AGENT, QUESTION
+from agent import DataFrameAgent, SQLAgent
+from prompts import CSV_PROMPT_PREFIX, CSV_PROMPT_SUFFIX, QUESTION
+from utils import setup_db, DB_PATH
 
-os.environ['OPENAI_API_KEY'] = ""
+os.environ['OPENAI_API_KEY'] = "API KEY HERE"
 
 if __name__ == "__main__":
-    # llm_object = LLM()
-    # hello_world = llm_object.call(HELLO_WORLD)
-    # print(hello_world)
-    
-    df = pd.read_csv("./data/all-states-history.csv").fillna(value = 0)
-    agent_object = DataFrameAgent(df)
-    # df_hello_world = agent_object.call(HELLO_WORLD_AGENT)
-    # print(df_hello_world)
-    print(agent_object.call(CSV_PROMPT_PREFIX + QUESTION + CSV_PROMPT_SUFFIX))
+    db_uri = setup_db()
+    sql_agent = SQLAgent(db_uri)
+    print(sql_agent.call(QUESTION))
